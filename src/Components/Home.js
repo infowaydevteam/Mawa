@@ -48,7 +48,7 @@ const Home = () => {
 
       {/* About Section */}
       <section id="about" className="section">
-        <h2>About the SUPER PAC</h2>
+        <h2>About Our SUPER PAC</h2>
         <p>
           Make America Wealthy Again (MAWA) is a dedicated Super Political Action Committee (Super PAC)
           committed to revitalizing the economic prosperity of every American.
