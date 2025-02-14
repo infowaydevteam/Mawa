@@ -74,21 +74,28 @@ const Home = () => {
       </section>
 
       {/* Newsroom Section */}
-      <section id="newsroom" className="section">
-        <h2>Recent Press Releases</h2>
-        <ul>
-          <li>
-            <a href="https://www.prnewswire.com" target="_blank" rel="noopener noreferrer">
-              MAWA Appeals to President Trump to Support Roger Ver Amid Potential Extradition
-            </a>
-          </li>
-          <li>
-            <a href="https://www.finance.yahoo.com" target="_blank" rel="noopener noreferrer">
-              MAWA Applauds President Trump's Pardon of Silk Road Founder Ross William Ulbricht
-            </a>
-          </li>
-        </ul>
-      </section>
+     <section id="newsroom" className="section">
+  <h2>Recent Press Releases</h2>
+  <ul>
+    <li>
+      <a href="https://www.prnewswire.com" target="_blank" rel="noopener noreferrer">
+        MAWA Appeals to President Trump to Support Roger Ver Amid Potential Extradition
+      </a>
+    </li>
+    <li>
+      <a href="https://www.finance.yahoo.com" target="_blank" rel="noopener noreferrer">
+        MAWA Applauds President Trump's Pardon of Silk Road Founder Ross William Ulbricht
+      </a>
+    </li>
+    <li>
+      <a href="https://fortune.com" target="_blank" rel="noopener noreferrer">
+        <img src="fortune-logo.png" alt="Fortune Logo" style={{ height: "20px", marginRight: "10px" }} />
+        What is Trump admin’s stance on cryptocurrency and blockchain technology? | Fortune
+      </a>
+    </li>
+  </ul>
+</section>
+
 
   {/* Contact Section */}
   <section id="contact" className="section">
