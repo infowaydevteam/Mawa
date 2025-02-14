@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Home.css";
 import logo from "../Components/MAWA.png"; // Adjust path if needed
+import fortuneLogo from "../Components/logo fortune.png"; // Fortune logo added here
 import { FaBars, FaTimes } from "react-icons/fa"; // Import menu icons
 
 const Home = () => {
@@ -15,10 +16,9 @@ const Home = () => {
     <div>
       {/* Navbar */}
       <nav className="navbar">
-      <div className="logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} style={{ cursor: "pointer" }}>
-  <img src={logo} alt="Logo" />
-</div>
-
+        <div className="logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} style={{ cursor: "pointer" }}>
+          <img src={logo} alt="Logo" />
+        </div>
 
         {/* Hamburger Icon */}
         <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
@@ -36,15 +36,13 @@ const Home = () => {
 
       {/* Hero Section */}
       <div className="hero">
-  <div className="hero-overlay"></div>
-<h1>MAKE AMERICA WEALTHY AGAIN</h1>
-
-
-  <p>Supporting policies that drive economic prosperity.</p>
-  <button className="button-primary" onClick={() => scrollToSection("about")}>
-    Learn More
-  </button>
-</div>
+        <div className="hero-overlay"></div>
+        <h1>MAKE AMERICA WEALTHY AGAIN</h1>
+        <p>Supporting policies that drive economic prosperity.</p>
+        <button className="button-primary" onClick={() => scrollToSection("about")}>
+          Learn More
+        </button>
+      </div>
 
       {/* About Section */}
       <section id="about" className="section">
@@ -74,32 +72,30 @@ const Home = () => {
       </section>
 
       {/* Newsroom Section */}
-    <section id="newsroom" className="section">
-  <h2>Recent Press Releases</h2>
-  <ul>
-    <li>
-      <a href="https://www.prnewswire.com" target="_blank" rel="noopener noreferrer">
-        MAWA Appeals to President Trump to Support Roger Ver Amid Potential Extradition
-      </a>
-    </li>
-    <li>
-      <a href="https://www.finance.yahoo.com" target="_blank" rel="noopener noreferrer">
-        MAWA Applauds President Trump's Pardon of Silk Road Founder Ross William Ulbricht
-      </a>
-    </li>
-    <li>
-      <a href="https://fortune.com/2025/02/14/trump-administration-cryptocurrency-blockchain-stance/" target="_blank" rel="noopener noreferrer">
-        <img src="./images.png" alt="Fortune Logo" style={{ height: "20px", marginRight: "10px" }} />
-        What is Trump admin’s stance on cryptocurrency and blockchain technology? | Fortune
-      </a>
-    </li>
-  </ul>
-</section>
+      <section id="newsroom" className="section">
+        <h2>Recent Press Releases</h2>
+        <ul>
+          <li>
+            <a href="https://www.prnewswire.com" target="_blank" rel="noopener noreferrer">
+              MAWA Appeals to President Trump to Support Roger Ver Amid Potential Extradition
+            </a>
+          </li>
+          <li>
+            <a href="https://www.finance.yahoo.com" target="_blank" rel="noopener noreferrer">
+              MAWA Applauds President Trump's Pardon of Silk Road Founder Ross William Ulbricht
+            </a>
+          </li>
+          <li>
+            <a href="https://fortune.com/2025/02/13/trump-admin-cryptocurrency-blockchain-technology/" target="_blank" rel="noopener noreferrer">
+              What is Trump admin’s stance on cryptocurrency and blockchain technology? |               <img src={fortuneLogo} alt="Fortune Logo" style={{ height: "40px", marginRight: "10px", verticalAlign: "middle" }} />
 
+            </a>
+          </li>
+        </ul>
+      </section>
 
-
-  {/* Contact Section */}
-  <section id="contact" className="section">
+      {/* Contact Section */}
+      <section id="contact" className="section">
         <h2>Contact Us</h2>
         <p>
           Have questions or want to get involved? Reach out to us at  
